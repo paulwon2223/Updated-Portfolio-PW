@@ -25,7 +25,7 @@ section {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #e5e5e5;
+  color: black !important;
 }
 
 #name {
@@ -35,7 +35,10 @@ section {
 }
 
 .blue {
-  background: #14213d;
+  /* background-image: url('./img/bg1.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: #8d99ae;
 }
 
 .white {
@@ -48,10 +51,16 @@ section {
 
 .dark {
   background: black;
+  min-height: 400px;
+}
+
+.grey {
+  background: #eef0eb;
 }
 
 #projectsection {
   font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 .wave {
@@ -83,6 +92,21 @@ section {
 #bio {
   color: black;
   font-family: "Poppins", sans-serif;
+  padding-right: 10px;
+}
+
+.profilepic {
+  height: 500px;
+  width: 425px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+.myskills {
+  color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .custom-shape-divider-bottom-1655920759 {
@@ -103,7 +127,7 @@ section {
 }
 
 .custom-shape-divider-bottom-1655920759 .shape-fill {
-  fill: black;
+  fill: white;
 }
 
 .wrapper {
@@ -139,10 +163,45 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #14213d;
+  background-color: #8d99ae;
   border-left: 2px solid #ee6c4d;
   animation: typing 3s steps(10) infinite;
 }
+
+
+#projcontainer1 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  background: white !important;
+  border-radius: 30px;
+}
+
+.projecttitles {
+  text-decoration: underline;
+}
+
+#projcontainer2 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  background: white !important;
+  border-radius: 30px;
+}
+
+#projcontainer3 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  background: white !important;
+  border-radius: 30px;
+}
+
+.iconlinks {
+  color: black;
+}
+
+.iconlinks:hover {
+  color: blue;
+}
+
 
 @keyframes typing {
   40%,
