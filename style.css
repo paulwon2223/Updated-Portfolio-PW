@@ -51,7 +51,7 @@ section {
 
 .dark {
   background: black;
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .grey {
@@ -87,6 +87,7 @@ section {
 #about {
   color: black;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
 }
 
 #bio {
@@ -200,6 +201,11 @@ section {
 
 .iconlinks:hover {
   color: blue;
+}
+
+.logos {
+  height: 140px;
+  width: 140px;
 }
 
 
