@@ -1,3 +1,4 @@
+/* ---------------------- GLOBAL STYLE ---------------------- */
 * {
   scroll-behavior: smooth;
 }
@@ -18,26 +19,9 @@ section {
   padding: 100px 20vw;
 }
 
-#navbar {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: black;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-  color: black !important;
-}
-
-#name {
-  padding-top: 200px;
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-}
-
+/* ---------------------- BACKGROUND COLOR CLASS ---------------------- */
 .blue {
-  /* background-image: url('./img/bg1.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
   background: #8d99ae;
 }
 
@@ -58,11 +42,32 @@ section {
   background: #eef0eb;
 }
 
+
+/* ---------------------- NAV BAR ---------------------- */
+#navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black !important;
+}
+
+#name {
+  padding-top: 200px;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+}
+
+
 #projectsection {
   font-family: "Poppins", sans-serif;
   color: black;
 }
 
+
+/* ---------------------- HOME PAGE/ HERO SECTION ---------------------- */
 .wave {
   position: absolute;
   bottom: 0;
@@ -84,6 +89,62 @@ section {
   fill: #ffffff;
 }
 
+.wrapper {
+  display: flex;
+  margin-top: 200px;
+}
+
+.wrapper .dynamictxt {
+  margin-left: 10px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamictxt li {
+  list-style: none;
+  color: #e5e5e5;
+  font-size: 60px;
+  font-weight: 500;
+  top: 0;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  animation: slide 12s steps(4) infinite;
+}
+
+.dynamictxt li {
+  position: relative;
+}
+
+.dynamictxt li ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #8d99ae;
+  border-left: 2px solid #ee6c4d;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+
+/* ---------------------- ABOUT ---------------------- */
 #about {
   color: black;
   font-family: "Poppins", sans-serif;
@@ -131,45 +192,8 @@ section {
   fill: white;
 }
 
-.wrapper {
-  display: flex;
-  margin-top: 200px;
-}
 
-.wrapper .dynamictxt {
-  margin-left: 10px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamictxt li {
-  list-style: none;
-  color: #e5e5e5;
-  font-size: 60px;
-  font-weight: 500;
-  top: 0;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  animation: slide 12s steps(4) infinite;
-}
-
-.dynamictxt li {
-  position: relative;
-}
-
-.dynamictxt li ::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #8d99ae;
-  border-left: 2px solid #ee6c4d;
-  animation: typing 3s steps(10) infinite;
-}
-
-
+/* ---------------------- PROJECTS/SKILLS ---------------------- */
 #projcontainer1 {
   font-family: "Poppins", sans-serif;
   font-style: italic;
@@ -210,22 +234,4 @@ section {
 
 .projectcard {
   color: black;
-}
-
-
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
 }
