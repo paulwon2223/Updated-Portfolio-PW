@@ -208,6 +208,10 @@ section {
   width: 140px;
 }
 
+.projectcard {
+  color: black;
+}
+
 
 
 @keyframes typing {
